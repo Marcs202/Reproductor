@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Home"  screenOptions={{headerShown: false}}>
         <Stack.Screen name="Principal" component={Principal} />
         <Stack.Screen name="Canciones" component={Canciones} />
         <Stack.Screen name="MusicPlayer" component={MusicPlayer} />

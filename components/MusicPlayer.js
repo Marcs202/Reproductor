@@ -88,7 +88,7 @@ const MusicPlayer = () => {
           width: width,
           justifyContent: 'center',
           alignItems: 'center',
-          backgroundColor: 'black',
+          backgroundColor: '#222831',
         }}>
         <View style={styles.artWorkWrapper}>
           <Image source={{ uri: item.artwork }} style={styles.artWorkImg} />
@@ -182,23 +182,8 @@ const MusicPlayer = () => {
       </View>
 
 
-      <View style={styles.bottomContainer}>
-        <View style={styles.bottomControls}>
-          <TouchableOpacity onPress={() => { }}>
-            <Ionicons name="home" size={30} color="#777777" />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => { }}>
-            <Ionicons name="repeat" size={30} color="#777777" />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => { }}>
-            <Ionicons name="share-outline" size={30} color="#777777" />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => { }}>
-            <Ionicons name="ellipsis-horizontal" size={30} color="#777777" />
-          </TouchableOpacity>
-        </View>
-      </View>
       
+
     </SafeAreaView>
   );
 };
